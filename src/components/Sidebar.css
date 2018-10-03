@@ -1,0 +1,94 @@
+.Sidebar {
+  width: 90px;
+  background-color: rgba(32, 32, 35, 1);
+  height: 100%;
+  border-right: 1px solid rgba(189, 189, 192, 0.1);
+  transition: width 0.5s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.Button-m-ui {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 10px;
+  outline: none;
+  border: none;
+  background: #55ACEE;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+  box-shadow: 0px 4px 4px 3px #252528;
+}
+
+.Button-m-ui:hover {
+  background: #239AF5;
+  transition: ease 0.1s;
+}
+
+.ripple {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ripple span {
+  -webkit-animation: ink 1.6s;
+  animation: ink 1.6s;
+  border-radius: 100%;
+  background: #FFFFFF;
+  height: 12px;
+  position: absolute;
+  width: 12px;
+}
+
+@-webkit-keyframes ink {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(40);
+    transform: scale(40);
+  }
+}
+
+@keyframes ink {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(40);
+    transform: scale(40);
+  }
+}
+
+.Sidebar.open {
+  width: 320px;
+}
+
+.Sidebar {
+  padding-bottom: 50px;
+  box-sizing: border-box
+}
+
+/* not small devices  */
+
+@media (min-width: 576px) {
+  .Sidebar {
+    width: 320px;
+  }
+  .Button-m-ui {
+    display: none;
+  }
+}

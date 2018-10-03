@@ -1,0 +1,10 @@
+export const SET_ACTIVE_USER_ID = "SET_ACTIVE_USER_ID",
+                SET_TYPING_VALUE = "SET_TYPING_VALUE",
+                SEND_MESSAGE = "SEND_MESSAGE",
+                ADD_CONTACT = "ADD_CONTACT",
+                UNSEEN_MESSAGE = "UNSEEN_MESSAGE",
+                USER_TYPING = "USER_TYPING",
+                USER_STOP_TYPING = "USER_STOP_TYPING",
+                ADD_CONTACTS = "ADD_CONTACTS",
+                RESET_UNSEEN_MESSAGES = "RESET_UNSEEN_MESSAGES",
+                REMOVE_CONTACT = "REMOVE_CONTACT";
